@@ -5,21 +5,21 @@
 class CcSelect < Formula
   desc "Shell-level AI provider isolation for Claude Code"
   homepage "https://github.com/matiastang/cc-select"
-  version "0.0.1"
+  version "0.0.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/matiastang/cc-select/releases/download/v0.0.1/cc-select_0.0.1_darwin_amd64.tar.gz"
-      sha256 "f1650a7d21295bdfb5ca549c88eb9d43863513bb88f478dcf1e433319d6ba5bc"
+      url "https://github.com/matiastang/cc-select/releases/download/v0.0.2/cc-select_0.0.2_darwin_amd64.tar.gz"
+      sha256 "74a746050f026f12de788fd7ca6ce31a19584bd5e9eae7bc911f7fe6459cf55c"
 
       define_method(:install) do
         bin.install "cc-select"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/matiastang/cc-select/releases/download/v0.0.1/cc-select_0.0.1_darwin_arm64.tar.gz"
-      sha256 "07600796464e308d20df87df3b6fe3e8b21e5fb53d9449b34af7d7dc20c21a26"
+      url "https://github.com/matiastang/cc-select/releases/download/v0.0.2/cc-select_0.0.2_darwin_arm64.tar.gz"
+      sha256 "eee7d49a2efd8a83826f728de101d481b24ce5c6fb9b165ddf20c8b1c1a63974"
 
       define_method(:install) do
         bin.install "cc-select"
@@ -29,15 +29,15 @@ class CcSelect < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matiastang/cc-select/releases/download/v0.0.1/cc-select_0.0.1_linux_amd64.tar.gz"
-      sha256 "8d3ebcd0b250038b84bec69cd41081a8a1301edb06cb6a9b692f89d6d990cef3"
+      url "https://github.com/matiastang/cc-select/releases/download/v0.0.2/cc-select_0.0.2_linux_amd64.tar.gz"
+      sha256 "62f725a51e9f78ae2731d285de492912631dd1cc5bec712a02ec78b494927aa7"
       define_method(:install) do
         bin.install "cc-select"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matiastang/cc-select/releases/download/v0.0.1/cc-select_0.0.1_linux_arm64.tar.gz"
-      sha256 "7ba68faf6cc63b7d2c9a7f4e2740461b5d35337b43aeb7f1a7c804fc729aeb45"
+      url "https://github.com/matiastang/cc-select/releases/download/v0.0.2/cc-select_0.0.2_linux_arm64.tar.gz"
+      sha256 "f41b2822a52c1e6384cf3a74b77e45e8c37e4a80071cec0e1e252d1681d1c6be"
       define_method(:install) do
         bin.install "cc-select"
       end
