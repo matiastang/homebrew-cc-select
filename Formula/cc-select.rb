@@ -11,7 +11,7 @@ class CcSelect < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/matiastang/cc-select/releases/download/v0.1.1/cc-select_0.1.1_darwin_amd64.tar.gz"
-      sha256 "f91305a5fb72a36a2d39f6bc0de0f7d5527106dad82924e5b93184f4d43b4b10"
+      sha256 "8ca8c6e4983dedf5a9aa731f491ce2a8dd855bca598d4adc47b3e0b2b909f595"
 
       define_method(:install) do
         bin.install "cc-select"
@@ -19,7 +19,7 @@ class CcSelect < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/matiastang/cc-select/releases/download/v0.1.1/cc-select_0.1.1_darwin_arm64.tar.gz"
-      sha256 "4c26f06b3270f606f1a8fc61dcedfeb4c09bfb977215973f4e7ebb7f485a70a9"
+      sha256 "345b0af00bd24c94fc5b43d1b4ecb59363902c5f91866b7735193104964084b8"
 
       define_method(:install) do
         bin.install "cc-select"
@@ -30,14 +30,14 @@ class CcSelect < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/matiastang/cc-select/releases/download/v0.1.1/cc-select_0.1.1_linux_amd64.tar.gz"
-      sha256 "4f78c1d07934d9e838740ab2f0240e0b5bca1c7d070b44feb7958c67a681aecf"
+      sha256 "a216b3d7c87c4283c59162aca8539c8f0f11153f1e45f15d5a158f36fd4201ae"
       define_method(:install) do
         bin.install "cc-select"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/matiastang/cc-select/releases/download/v0.1.1/cc-select_0.1.1_linux_arm64.tar.gz"
-      sha256 "cdfa68d6b346914140edbf0240080d8548627e7d7e492980c944a8af4361b601"
+      sha256 "e244c67b7dca3fd237f768e7426ecd0b925edfe199d624e41d85a02872602275"
       define_method(:install) do
         bin.install "cc-select"
       end
